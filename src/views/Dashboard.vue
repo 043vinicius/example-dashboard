@@ -3,9 +3,10 @@
         <a-layout>
             <a-layout-sider :style="{ overflow: 'hidden', height: '100vh', position: 'fixed', left: 0, top: 0, bottom: 0 }">
                 <!-- Logo -->
-                <div style="background-color: rgb(66, 0, 0);" class="logo">
+                <div style="background-color: rgb(66, 0, 0);">
                     <img src="../../public/logo-digisensor.png" alt="" style="height: 72px;">
                 </div>
+                <!-- Menu -->
                 <a-menu theme="dark" mode="inline" :style="{ height: '100%', borderRight: 0 }">
                     <!-- Início -->
                     <a-menu-item key="sub1">
