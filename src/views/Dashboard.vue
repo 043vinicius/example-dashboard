@@ -1,24 +1,31 @@
 <template>
     <div>
         <a-layout>
-            <a-layout-sider
-                :style="{ overflow: 'hidden', height: '100vh', position: 'fixed', left: 0, top: 0, bottom: 0 }"
-            >
+            <a-layout-sider :style="{ overflow: 'hidden', height: '100vh', position: 'fixed', left: 0, top: 0, bottom: 0 }">
+                <!-- Logo -->
                 <div style="background-color: rgb(66, 0, 0);" class="logo">
                     <img src="../../public/logo-digisensor.png" alt="" style="height: 72px;">
                 </div>
-                <a-menu
-                    theme="dark"
-                    mode="inline"
-                    :style="{ height: '100%', borderRight: 0 }"
-                >
+                <a-menu theme="dark" mode="inline" :style="{ height: '100%', borderRight: 0 }">
+                    <!-- Início -->
                     <a-menu-item key="sub1">
                         <HomeFilled style="margin-right: 8px;"/>
-                        <router-link to="/">Inicio</router-link>
+                        <router-link to="/">Início</router-link>
                     </a-menu-item>
+                    <!-- Usuários -->
+                    <a-menu-item key="sub4">
+                        <user-outlined style="margin-right: 8px;"/>
+                        <router-link to="/users">Usuários</router-link>
+                    </a-menu-item>
+                    <!-- Relatórios -->
                     <a-menu-item key="sub2">
                         <file-text-outlined style="margin-right: 8px;"/>
-                        <router-link to="/about">Relatórios</router-link>
+                        <router-link to="/records">Listar relatórios</router-link>
+                    </a-menu-item>
+                    <!-- Novo relatório -->
+                    <a-menu-item key="sub3">
+                        <plus-circle-outlined style="margin-right: 8px;"/>
+                        <router-link to="/records/add">Novo relatório</router-link>
                     </a-menu-item>
                 </a-menu>
             </a-layout-sider>
@@ -37,12 +44,14 @@
 </template>
 
 <script>
-import { HomeFilled, FileTextOutlined } from '@ant-design/icons-vue';
+import { HomeFilled, FileTextOutlined, PlusCircleOutlined, UserOutlined } from '@ant-design/icons-vue';
 
 export default {
     components: {
         HomeFilled,
         FileTextOutlined,
+        PlusCircleOutlined,
+        UserOutlined,
     },
     name: 'Dashboard',
 };
@@ -58,8 +67,8 @@ export default {
     background-color: brown;
 }
 
-.ant-menu-item-active {
-    background-color: blueviolet;
+.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):active{
+    background-color: brown;
 }
 
 </style>
