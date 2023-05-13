@@ -1,4 +1,4 @@
-# digissensor
+# digisensor
 
 ## Project setup
 ```

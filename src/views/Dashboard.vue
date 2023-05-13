@@ -37,7 +37,7 @@
                     </div>
                 </a-layout-content>
                 <a-layout-footer style="text-align: center">
-                    Digissensor ©2023
+                    Digisensor ©2023
                 </a-layout-footer>
             </a-layout>
         </a-layout>
