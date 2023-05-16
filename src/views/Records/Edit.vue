@@ -12,6 +12,6 @@
             </a-breadcrumb-item>
         </a-breadcrumb>
         <a-divider/>
-        <h1>This is an record edit page</h1>
+        <h1>Formulário para cadastro/edição de formulário</h1>
     </div>
 </template>

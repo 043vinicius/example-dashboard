@@ -163,13 +163,13 @@ export default {
                     title: 'Data',
                     dataIndex: 'date',
                     key: 'date',
-                    width: '20%',
+                    width: '15%',
                 },
                 {
                     title: 'Endereço',
                     dataIndex: 'address',
                     key: 'address',
-                    width: '20%',
+                    width: '25%',
                 },
                 {
                     title: 'Relator',
@@ -182,7 +182,7 @@ export default {
                     key: 'actions',
                     align: 'center',
                     bodyCell: 'actions',
-                    width: '15%',
+                    width: 'auto',
                 },
             ],
         };
