@@ -9,6 +9,10 @@ Requisitos:
 - Bucket de arquivos cdn para armazenar as imagens enviadas nos relatórios
 - Hospedagem para a API e painel(dashboard)
 
+- Aplicação WEB PWA, sem intenção de migrar para mobile futuramente
+- Utilizar framework em vue, bootstrap ou ant-design
+- Cores base para site: Tons de vermelho, preto e branco
+
 160 horas de desenvolvimento
 R$ 50,00 a hora
 R$ 8000,00 valor final (à tratar)
