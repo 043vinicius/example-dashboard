@@ -57,7 +57,7 @@ import {
     ArrowDownOutlined,
     ArrowUpOutlined,
     UserOutlined,
-} from "@ant-design/icons-vue";
+} from '@ant-design/icons-vue';
 
 export default {
     components: {
@@ -65,6 +65,6 @@ export default {
         ArrowUpOutlined,
         UserOutlined,
     },
-    name: "home",
+    name: 'home',
 };
 </script>
